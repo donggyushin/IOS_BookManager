@@ -46,6 +46,30 @@ class ViewController: UIViewController {
         bookName.text = ""
         bookAuthor.text = ""
         bookGenre.text = ""
+        textView.text = "\(title) has been registered!"
+        
+    }
+    
+    @IBAction func searchByBookName(_ sender:Any){
+        let bookTitle = bookName.text!
+        let searchedBook:String? = MyBookManager.searchBook(BookName: bookTitle)
+        if searchedBook != nil {
+            textView.text = searchedBook!
+        }else {
+            textView.text = "fail to search the book"
+        }
+        bookName.text = ""
+    }
+    
+    @IBAction func removeByBookName(_ sender:Any){
+        let title:String = bookName.text!
+        let result = MyBookManager.removeBook(bookName: title)
+        if result == 1{
+            textView.text = "\(title) has been removed!"
+        }else {
+            textView.text = "fail to remove the book"
+        }
+        textView.text = ""
         
     }
 
