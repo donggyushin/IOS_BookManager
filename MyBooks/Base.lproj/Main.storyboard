@@ -90,6 +90,9 @@
                                 <state key="normal" title="book lists">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="showAllBooks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZFU-Vj-Wz9"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="book list...." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cn7-FE-wgF">
                                 <rect key="frame" x="51" y="398" width="273" height="206"/>
@@ -133,6 +136,9 @@
                         <color key="backgroundColor" red="1" green="0.44862309010000001" blue="0.76500981990000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="cn7-FE-wgF" id="i2a-Ic-Jj5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

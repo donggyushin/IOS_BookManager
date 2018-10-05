@@ -14,6 +14,8 @@
 		D4C9D04A21676C800012024A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C9D04821676C800012024A /* LaunchScreen.storyboard */; };
 		D4C9D05521676C800012024A /* MyBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9D05421676C800012024A /* MyBooksTests.swift */; };
 		D4C9D06021676C800012024A /* MyBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9D05F21676C800012024A /* MyBooksUITests.swift */; };
+		D4C9D071216781130012024A /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9D06E216781120012024A /* BookManager.swift */; };
+		D4C9D072216781130012024A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9D06F216781130012024A /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D4C9D05B21676C800012024A /* MyBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C9D05F21676C800012024A /* MyBooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksUITests.swift; sourceTree = "<group>"; };
 		D4C9D06121676C800012024A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C9D06E216781120012024A /* BookManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookManager.swift; path = ../../bookManager/bookManager/BookManager.swift; sourceTree = "<group>"; };
+		D4C9D06F216781130012024A /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = ../../bookManager/bookManager/Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				D4C9D03F21676C800012024A /* AppDelegate.swift */,
 				D4C9D04121676C800012024A /* ViewController.swift */,
+				D4C9D06F216781130012024A /* Book.swift */,
+				D4C9D06E216781120012024A /* BookManager.swift */,
 				D4C9D04321676C800012024A /* Main.storyboard */,
 				D4C9D04621676C800012024A /* Assets.xcassets */,
 				D4C9D04821676C800012024A /* LaunchScreen.storyboard */,
@@ -261,6 +267,8 @@
 			files = (
 				D4C9D04221676C800012024A /* ViewController.swift in Sources */,
 				D4C9D04021676C800012024A /* AppDelegate.swift in Sources */,
+				D4C9D071216781130012024A /* BookManager.swift in Sources */,
+				D4C9D072216781130012024A /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
