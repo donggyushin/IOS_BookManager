@@ -4,7 +4,10 @@ import UIKit
 
 class ViewController: UIViewController {
     var MyBookManager = BookManager()
-    @IBOutlet weak var textView : UITextView?
+    @IBOutlet weak var textView : UITextView!
+    @IBOutlet weak var bookName : UITextField!
+    @IBOutlet weak var bookAuthor : UITextField!
+    @IBOutlet weak var bookGenre : UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,22 @@ class ViewController: UIViewController {
         print("showAllBooks Button clicked!")
         var bookList = MyBookManager.showBooks()
         textView?.text = bookList
+    }
+    
+    @IBAction func registerNewBook(_ sender:Any){
+        print("register button clicked!")
+        var title:String = bookName.text!
+        var author:String = bookAuthor.text!
+        var genre:String = bookGenre.text!
+        print("title: \(title)")
+        print("author: \(author)")
+        print("genre: \(genre)")
+        let newBook = Book(name:title, genre:genre, author:author)
+        MyBookManager.registerBook(bookObject: newBook)
+        bookName.text = ""
+        bookAuthor.text = ""
+        bookGenre.text = ""
+        
     }
 
     override func didReceiveMemoryWarning() {
